@@ -16,22 +16,38 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            Center(
-              child: Padding(
-                padding: EdgeInsets.all(10.0),
-                child: Material(
-                  elevation: 5.0,
-                  borderRadius: BorderRadius.circular(30.0),
-                  color: Colors.yellow,
-                  child: MaterialButton(
-                    minWidth: MediaQuery.of(context).size.width,
-                    padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-                    onPressed: () {},
-                    child: Text(
-                      "Sign Up",
-                      style: TextStyle(color: Colors.cyan),
-                      textAlign: TextAlign.center,
-                    ),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Material(
+                elevation: 5.0,
+                borderRadius: BorderRadius.circular(30.0),
+                color: Colors.white,
+                child: MaterialButton(
+                  minWidth: MediaQuery.of(context).size.width,
+                  padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+                  onPressed: () {},
+                  child: Text(
+                    "Sign in",
+                    style: TextStyle(color: Colors.cyan),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+              child: Material(
+                elevation: 5.0,
+                borderRadius: BorderRadius.circular(30.0),
+                color: Colors.yellow,
+                child: MaterialButton(
+                  minWidth: MediaQuery.of(context).size.width,
+                  padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+                  onPressed: () {},
+                  child: Text(
+                    "Sign Up",
+                    style: TextStyle(color: Colors.cyan),
+                    textAlign: TextAlign.center,
                   ),
                 ),
               ),
