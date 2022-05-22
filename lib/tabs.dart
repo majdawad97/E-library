@@ -26,7 +26,8 @@ class _TabsState extends State<Tabs> {
         label: 'Home'),
     BottomNavigationBarItem(icon: Icon(Icons.store_rounded), label: 'Shop'),
     BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorate'),
-    BottomNavigationBarItem(icon: Icon(Icons.paste), label: '4'),
+    BottomNavigationBarItem(
+        icon: Icon(Icons.settings_rounded), label: 'Setting'),
   ];
 
   @override
