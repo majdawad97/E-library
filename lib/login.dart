@@ -1,3 +1,5 @@
+import 'package:e_library/signInPage.dart';
+import 'package:e_library/signUpPage.dart';
 import 'package:e_library/tabs.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +31,7 @@ class LoginScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Tabs()),
+                      MaterialPageRoute(builder: (context) => SignInScreen()),
                     );
                   },
                   child: Text(
@@ -52,7 +54,7 @@ class LoginScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Tabs()),
+                      MaterialPageRoute(builder: (context) => SignUpScreen()),
                     );
                   },
                   child: Text(
