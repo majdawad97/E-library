@@ -65,68 +65,72 @@ class _ShopState extends State<Shop> {
           backgroundColor: Colors.white,
         ),
         backgroundColor: Colors.white,
-        body: ListView(scrollDirection: Axis.vertical, children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 400,
-              width: 150,
-              color: Colors.white,
-              child: Column(
-                children: [
-                  Center(
-                      child: Image.asset(
-                    'images/Interaction_of_color.jpg',
-                    fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width - 20,
-                    height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
-                  )),
-                  Text('book title'),
-                ],
-              ),
+        body: GridView(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisSpacing: 10, mainAxisSpacing: 10, crossAxisCount: 2),
+          children: [
+            Container(
+              child:
+                  Image(image: AssetImage('images/Interaction_of_color.jpg')),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 400,
-              width: 150,
-              color: Colors.white,
-              child: Column(
-                children: [
-                  Center(
-                      child: Image.asset(
-                    'images/steal_like_an_artist.jpg',
-                    fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width - 20,
-                    height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
-                  )),
-                  Text('book title'),
-                ],
-              ),
+            Container(
+              child:
+                  Image(image: AssetImage('images/steal_like_an_artist.jpg')),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 400,
-              width: 150,
-              color: Colors.white,
-              child: Column(
-                children: [
-                  Center(
-                      child: Image.asset(
-                    'images/the_design_of_everyday_things.jpg',
-                    fit: BoxFit.cover,
-                    width: MediaQuery.of(context).size.width - 20,
-                    height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
-                  )),
-                  Text('book title'),
-                ],
-              ),
+            Container(
+              child: Image(
+                  image:
+                      AssetImage('images/the_design_of_everyday_things.jpg')),
             ),
-          ),
-        ]),
+            Container(
+              child: Image(
+                  image: AssetImage('images/Sin_Eater_by_Megan_Campisi.jpg')),
+            ),
+            Container(
+              child: Image(
+                  image: AssetImage('images/the imperfection of memory.jpg')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+            Container(
+              child: Image(image: AssetImage('')),
+            ),
+          ],
+        ),
       ),
     );
   }
