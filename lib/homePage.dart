@@ -483,14 +483,17 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             children: [
                               Center(
-                                  child: Image.asset(
-                                'images/steal_like_an_artist.jpg',
-                                fit: BoxFit.cover,
-                                width: MediaQuery.of(context).size.width - 20,
-                                height:
-                                    (MediaQuery.of(context).size.width - 20) *
-                                        60 /
-                                        100,
+                                  child: ClipRRect(
+                                borderRadius: BorderRadius.circular(10.0),
+                                child: Image.asset(
+                                  'images/steal_like_an_artist.jpg',
+                                  fit: BoxFit.cover,
+                                  width: MediaQuery.of(context).size.width - 20,
+                                  height:
+                                      (MediaQuery.of(context).size.width - 20) *
+                                          60 /
+                                          100,
+                                ),
                               )),
                               Text('book title'),
                             ],

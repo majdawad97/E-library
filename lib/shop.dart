@@ -67,71 +67,106 @@ class _ShopState extends State<Shop> {
         backgroundColor: Colors.white,
         body: GridView(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisSpacing: 10, mainAxisSpacing: 10, crossAxisCount: 2),
+              crossAxisSpacing: 5, mainAxisSpacing: 10, crossAxisCount: 3),
           children: [
-            Container(
-              child:
-                  Image(image: AssetImage('images/Interaction_of_color.jpg')),
-            ),
-            Container(
-              child:
-                  Image(image: AssetImage('images/steal_like_an_artist.jpg')),
-            ),
-            Container(
-              child: Image(
-                  image:
-                      AssetImage('images/the_design_of_everyday_things.jpg')),
-            ),
-            Container(
-              child: Image(
-                  image: AssetImage('images/Sin_Eater_by_Megan_Campisi.jpg')),
-            ),
-            Container(
-              child: Image(
-                  image: AssetImage('images/the imperfection of memory.jpg')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
-            Container(
-              child: Image(image: AssetImage('')),
-            ),
+            Image.asset('images/the imperfection of memory.jpg'),
+            Image.asset('images/Interaction_of_color.jpg'),
+            Image.asset('images/Sin_Eater_by_Megan_Campisi.jpg'),
+            Image.asset('images/steal_like_an_artist.jpg'),
+            Image.asset('images/the_design_of_everyday_things.jpg'),
+            Image.asset('images/lunar storm.jpeg'),
+            Image.asset('images/all-this-time.jpg'),
+            Image.asset('images/crack the code.jpeg'),
+            Image.asset('images/dark world.jpg'),
+            Image.asset('images/deadly keyholes.jpg'),
+            Image.asset('images/educated.jpg'),
+            Image.asset('images/five-feet-apart.jpg'),
+            Image.asset('images/intuition.jpg'),
+            Image.asset('images/lunar storm.jpeg'),
+            Image.asset('images/six-of-crows.jpg'),
+            Image.asset('images/tess of the road.jpg'),
+            Image.asset('images/the girl in red.jpeg'),
+            Image.asset('images/The Gravity of Us.jpg'),
+            Image.asset('images/the hypocrite world.jpg'),
+            Image.asset('images/the mind of a leader.jpg'),
+            Image.asset('images/the worst.jpg'),
+            Image.asset('images/The-Girl-Who-Never.jpg'),
+            Image.asset('images/the-hollow-woods.jpg'),
+            Image.asset('images/true love.jpg'),
           ],
         ),
       ),
     );
   }
 }
+
+
+// Card(
+//               child:
+//                   Image(image: AssetImage('images/Interaction_of_color.jpg')),
+//             ),
+//             Card(
+//               child:
+//                   Image(image: AssetImage('images/steal_like_an_artist.jpg')),
+//             ),
+//             Card(
+//               child: Image(
+//                   image:
+//                       AssetImage('images/the_design_of_everyday_things.jpg')),
+//             ),
+//             ClipRRect(
+//               borderRadius: BorderRadius.circular(20.0),
+//               child: Image.asset(('images/Sin_Eater_by_Megan_Campisi.jpg')),
+//             ),
+//             ClipRRect(
+//               borderRadius: BorderRadius.circular(10.0),
+//               child: Card(
+//                 shape: RoundedRectangleBorder(
+//                     borderRadius: BorderRadius.circular(10)),
+//                 child: Container(
+//                   child: Image(
+//                       fit: BoxFit.fill,
+//                       image:
+//                           AssetImage('images/the imperfection of memory.jpg')),
+//                 ),
+//               ),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
+//             Container(
+//               child: Image(image: AssetImage('')),
+//             ),
