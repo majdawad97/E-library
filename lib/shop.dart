@@ -14,32 +14,49 @@ class _ShopState extends State<Shop> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 100,
+          toolbarHeight: 160,
           flexibleSpace: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Column(
               children: [
-                Icon(
-                  Icons.menu,
-                  color: Colors.black,
-                  size: 40,
-                ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Icon(
-                      Icons.notifications_none,
+                      Icons.menu,
                       color: Colors.black,
                       size: 40,
                     ),
-                    SizedBox(
-                      width: 10,
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.notifications_none,
+                          color: Colors.black,
+                          size: 40,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Icon(
+                          Icons.person_outlined,
+                          size: 40,
+                        )
+                      ],
                     ),
-                    Icon(
-                      Icons.person_outlined,
-                      size: 40,
-                    )
                   ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(10)),
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                            hintText: 'Search',
+                            prefixIcon: Icon(Icons.search),
+                            suffixIcon: Icon(Icons.filter_list_sharp)),
+                      )),
                 ),
               ],
             ),
