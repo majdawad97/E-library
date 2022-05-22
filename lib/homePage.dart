@@ -104,29 +104,184 @@ class _HomePageState extends State<HomePage> {
                     scrollDirection: Axis.horizontal,
                   ),
                   items: [
-                    Center(
-                        child: Image.asset(
-                      'images/background2.jpg',
-                      fit: BoxFit.cover,
-                      width: MediaQuery.of(context).size.width - 20,
-                      height:
-                          (MediaQuery.of(context).size.width - 20) * 60 / 100,
+                    //item1
+                    Card(
+                        child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 120,
+                            width: 80,
+                            child: Image.asset(
+                              'images/steal_like_an_artist.jpg',
+                              fit: BoxFit.cover,
+                              width: MediaQuery.of(context).size.width - 20,
+                              height: (MediaQuery.of(context).size.width - 20) *
+                                  60 /
+                                  100,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'STEAL LIKE AN ARTIST',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                Text('Auston kleon'),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 40.0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text('Progress'),
+                                      Row(
+                                        children: [
+                                          Container(
+                                              height: 10,
+                                              width: 200,
+                                              decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(50),
+                                                color: Colors.blue,
+                                              )),
+                                          Text('100%')
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     )),
-                    Center(
-                        child: Image.asset(
-                      'images/background3.jpg',
-                      fit: BoxFit.cover,
-                      width: MediaQuery.of(context).size.width - 20,
-                      height:
-                          (MediaQuery.of(context).size.width - 20) * 60 / 100,
+                    //item2
+                    Card(
+                        child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          height: 120,
+                          width: 80,
+                          child: Image.asset(
+                            'images/Interaction_of_color.jpg',
+                            fit: BoxFit.cover,
+                            width: MediaQuery.of(context).size.width - 20,
+                            height: (MediaQuery.of(context).size.width - 20) *
+                                60 /
+                                100,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'INTERACTION OF COLOR',
+                                style: TextStyle(fontSize: 20),
+                              ),
+                              Text('Josef Albos'),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 40.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text('Progress'),
+                                    Row(
+                                      children: [
+                                        Container(
+                                            height: 10,
+                                            width: 200,
+                                            decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(50),
+                                              color: Colors.blue,
+                                            )),
+                                        Text('100%')
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     )),
-                    Center(
-                        child: Image.asset(
-                      'images/book.png',
-                      fit: BoxFit.cover,
-                      width: MediaQuery.of(context).size.width - 20,
-                      height:
-                          (MediaQuery.of(context).size.width - 20) * 60 / 100,
+                    //item3
+                    Card(
+                        child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 120,
+                            width: 80,
+                            child: Image.asset(
+                              'images/the_design_of_everyday_things.jpg',
+                              fit: BoxFit.cover,
+                              width: MediaQuery.of(context).size.width - 20,
+                              height: (MediaQuery.of(context).size.width - 20) *
+                                  60 /
+                                  100,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 20.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'THE DESIGN OF EVERY DAY\n THINGS',
+                                  style: TextStyle(fontSize: 20),
+                                ),
+                                Text('Don Norman'),
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 15.0),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text('Progress'),
+                                      Row(
+                                        children: [
+                                          Container(
+                                              height: 10,
+                                              width: 200,
+                                              decoration: BoxDecoration(
+                                                borderRadius:
+                                                    BorderRadius.circular(50),
+                                                color: Colors.blue,
+                                              )),
+                                          Text('100%')
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     )),
                   ],
                 ),
