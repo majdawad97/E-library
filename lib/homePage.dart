@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> {
                     )),
                     Center(
                         child: Image.asset(
-                      'images/book.jpg',
+                      'images/book.png',
                       fit: BoxFit.cover,
                       width: MediaQuery.of(context).size.width - 20,
                       height:
@@ -306,7 +306,7 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Center(
                                   child: Image.asset(
-                                'images/background2.jpg',
+                                'images/Interaction_of_color.jpg',
                                 fit: BoxFit.cover,
                                 width: MediaQuery.of(context).size.width - 20,
                                 height:
@@ -329,7 +329,7 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Center(
                                   child: Image.asset(
-                                'images/background.jpg',
+                                'images/steal_like_an_artist.jpg',
                                 fit: BoxFit.cover,
                                 width: MediaQuery.of(context).size.width - 20,
                                 height:
@@ -352,7 +352,7 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Center(
                                   child: Image.asset(
-                                'images/background3.jpg',
+                                'images/the_design_of_everyday_things.jpg',
                                 fit: BoxFit.cover,
                                 width: MediaQuery.of(context).size.width - 20,
                                 height:
