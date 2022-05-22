@@ -7,7 +7,7 @@ class LoginScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('images/background.jpg'),
+            image: AssetImage('images/background3.jpg'),
             fit: BoxFit.cover,
           ),
         ),
@@ -16,6 +16,13 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
+            // Container(
+            //   child: Image(
+            //     width: 400.0,
+            //     height: 300.0,
+            //     image: AssetImage('images/book3.jpg'),
+            //   ),
+            // ),
             Padding(
               padding: EdgeInsets.all(10.0),
               child: Material(
@@ -39,7 +46,7 @@ class LoginScreen extends StatelessWidget {
               child: Material(
                 elevation: 5.0,
                 borderRadius: BorderRadius.circular(30.0),
-                color: Colors.yellow,
+                color: Color(0xffF4E290),
                 child: MaterialButton(
                   minWidth: MediaQuery.of(context).size.width,
                   padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
