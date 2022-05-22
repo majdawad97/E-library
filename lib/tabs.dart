@@ -1,4 +1,5 @@
 import 'package:e_library/login.dart';
+import 'package:e_library/shop.dart';
 import 'package:flutter/material.dart';
 
 import 'homePage.dart';
@@ -15,11 +16,11 @@ class _TabsState extends State<Tabs> {
 
   List<Widget> pages = [
     HomePage(),
-    LoginScreen(),
+    Shop(),
   ];
   List<BottomNavigationBarItem> bottomItime = [
-    BottomNavigationBarItem(icon: Icon(Icons.paste), label: '1'),
-    BottomNavigationBarItem(icon: Icon(Icons.video_label), label: ' 2'),
+    BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+    BottomNavigationBarItem(icon: Icon(Icons.store_rounded), label: 'Shop'),
     BottomNavigationBarItem(icon: Icon(Icons.paste), label: '3'),
     BottomNavigationBarItem(icon: Icon(Icons.paste), label: '4'),
   ];
@@ -29,7 +30,8 @@ class _TabsState extends State<Tabs> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: bottomItime,
-        selectedItemColor: Colors.red,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.black38,
         currentIndex: currentIndex,
         onTap: (value) {
           setState(() {

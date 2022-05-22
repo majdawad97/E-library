@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -63,16 +64,34 @@ class _HomePageState extends State<HomePage> {
                         suffixIcon: Icon(Icons.filter_list_sharp)),
                   )),
             ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'My Books',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                      textAlign: TextAlign.left,
+                    ),
+                    Text('See all')
+                  ],
+                ),
+              ),
+            ),
             Container(
               child: CarouselSlider(
                 options: CarouselOptions(
-                  height: 120,
+                  height: 150,
                   aspectRatio: 16 / 9,
                   viewportFraction: 1,
                   initialPage: 0,
                   enableInfiniteScroll: true,
                   reverse: false,
-                  autoPlay: true,
+                  autoPlay: false,
                   autoPlayInterval: Duration(seconds: 3),
                   autoPlayAnimationDuration: Duration(milliseconds: 800),
                   autoPlayCurve: Curves.fastOutSlowIn,
@@ -82,12 +101,47 @@ class _HomePageState extends State<HomePage> {
                 items: [
                   Center(
                       child: Image.asset(
-                    'images/background.jpg',
+                    'images/background2.jpg',
+                    fit: BoxFit.cover,
+                    width: MediaQuery.of(context).size.width - 20,
+                    height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
+                  )),
+                  Center(
+                      child: Image.asset(
+                    'images/background3.jpg',
+                    fit: BoxFit.cover,
+                    width: MediaQuery.of(context).size.width - 20,
+                    height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
+                  )),
+                  Center(
+                      child: Image.asset(
+                    'images/book.jpg',
                     fit: BoxFit.cover,
                     width: MediaQuery.of(context).size.width - 20,
                     height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
                   )),
                 ],
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'For You',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                      textAlign: TextAlign.left,
+                    ),
+                    Icon(Icons.filter_list),
+                  ],
+                ),
               ),
             ),
           ],
