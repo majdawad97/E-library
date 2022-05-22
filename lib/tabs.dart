@@ -19,10 +19,15 @@ class _TabsState extends State<Tabs> {
     Shop(),
   ];
   List<BottomNavigationBarItem> bottomItime = [
-    BottomNavigationBarItem(icon: Icon(Icons.home,), label: 'Home'),
+    BottomNavigationBarItem(
+        icon: Icon(
+          Icons.home,
+        ),
+        label: 'Home'),
     BottomNavigationBarItem(icon: Icon(Icons.store_rounded), label: 'Shop'),
-    BottomNavigationBarItem(icon: Icon(Icons.paste), label: '3'),
-    BottomNavigationBarItem(icon: Icon(Icons.paste), label: '4'),
+    BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorate'),
+    BottomNavigationBarItem(
+        icon: Icon(Icons.settings_rounded), label: 'Setting'),
   ];
 
   @override
@@ -30,7 +35,7 @@ class _TabsState extends State<Tabs> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: bottomItime,
-        selectedItemColor: Colors.black,
+        selectedItemColor: Colors.cyan,
         unselectedItemColor: Colors.black38,
         currentIndex: currentIndex,
         onTap: (value) {

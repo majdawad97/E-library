@@ -26,14 +26,14 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     Icon(
                       Icons.menu,
-                      color: Colors.black,
+                      color: Colors.cyan,
                       size: 40,
                     ),
                     Row(
                       children: [
                         Icon(
                           Icons.notifications_none,
-                          color: Colors.black,
+                          color: Colors.cyan,
                           size: 40,
                         ),
                         SizedBox(
@@ -42,6 +42,7 @@ class _HomePageState extends State<HomePage> {
                         Icon(
                           Icons.person_outlined,
                           size: 40,
+                          color: Colors.cyan,
                         )
                       ],
                     )
@@ -151,7 +152,7 @@ class _HomePageState extends State<HomePage> {
                                               decoration: BoxDecoration(
                                                 borderRadius:
                                                     BorderRadius.circular(50),
-                                                color: Colors.blue,
+                                                color: Colors.cyan,
                                               )),
                                           Text('100%')
                                         ],
@@ -209,7 +210,7 @@ class _HomePageState extends State<HomePage> {
                                             decoration: BoxDecoration(
                                               borderRadius:
                                                   BorderRadius.circular(50),
-                                              color: Colors.blue,
+                                              color: Colors.cyan,
                                             )),
                                         Text('100%')
                                       ],
@@ -269,7 +270,7 @@ class _HomePageState extends State<HomePage> {
                                               decoration: BoxDecoration(
                                                 borderRadius:
                                                     BorderRadius.circular(50),
-                                                color: Colors.blue,
+                                                color: Colors.cyan,
                                               )),
                                           Text('100%')
                                         ],
@@ -328,11 +329,11 @@ class _HomePageState extends State<HomePage> {
                                       fontWeight: FontWeight.normal),
                                 )),
                             style: TextButton.styleFrom(
-                                backgroundColor: Colors.deepPurple,
+                                backgroundColor: Colors.cyan,
                                 primary: Colors.white,
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                    color: Colors.black,
+                                    color: Colors.cyan,
                                   ),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(20)),
@@ -358,7 +359,7 @@ class _HomePageState extends State<HomePage> {
                                 primary: Colors.grey,
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                    color: Colors.black,
+                                    color: Colors.grey,
                                   ),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(20)),
@@ -384,7 +385,7 @@ class _HomePageState extends State<HomePage> {
                                 primary: Colors.grey,
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                    color: Colors.black,
+                                    color: Colors.grey,
                                   ),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(20)),
@@ -410,7 +411,7 @@ class _HomePageState extends State<HomePage> {
                                 primary: Colors.grey,
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                    color: Colors.black,
+                                    color: Colors.grey,
                                   ),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(20)),
@@ -436,7 +437,7 @@ class _HomePageState extends State<HomePage> {
                                 primary: Colors.grey,
                                 shape: RoundedRectangleBorder(
                                   side: BorderSide(
-                                    color: Colors.black,
+                                    color: Colors.grey,
                                   ),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(20)),
@@ -469,7 +470,7 @@ class _HomePageState extends State<HomePage> {
                                         60 /
                                         100,
                               )),
-                              Text('book title'),
+                              Text('Intreaction Of Color'),
                             ],
                           ),
                         ),
@@ -495,7 +496,7 @@ class _HomePageState extends State<HomePage> {
                                           100,
                                 ),
                               )),
-                              Text('book title'),
+                              Text('Steal like an artist'),
                             ],
                           ),
                         ),
@@ -518,7 +519,7 @@ class _HomePageState extends State<HomePage> {
                                         60 /
                                         100,
                               )),
-                              Text('book title'),
+                              Text('The Design of'),
                             ],
                           ),
                         ),
