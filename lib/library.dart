@@ -25,14 +25,14 @@ class _LibraryState extends State<Library> {
                     Icon(
                       Icons.menu,
                       color: Colors.cyan,
-                      size: 40,
+                      size: 30,
                     ),
                     Row(
                       children: [
                         Icon(
                           Icons.notifications_none,
                           color: Colors.cyan,
-                          size: 40,
+                          size: 30,
                         ),
                         SizedBox(
                           width: 10,
@@ -40,7 +40,7 @@ class _LibraryState extends State<Library> {
                         Icon(
                           Icons.person_outlined,
                           color: Colors.cyan,
-                          size: 40,
+                          size: 30,
                         )
                       ],
                     ),
@@ -100,7 +100,6 @@ class _LibraryState extends State<Library> {
     );
   }
 }
-
 
 // Card(
 //               child:
