@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-class Shop extends StatefulWidget {
-  const Shop({Key? key}) : super(key: key);
+class Library extends StatefulWidget {
+  const Library({Key? key}) : super(key: key);
 
   @override
-  _ShopState createState() => _ShopState();
+  _LibraryState createState() => _LibraryState();
 }
 
-class _ShopState extends State<Shop> {
+class _LibraryState extends State<Library> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -24,14 +24,14 @@ class _ShopState extends State<Shop> {
                   children: [
                     Icon(
                       Icons.menu,
-                      color: Colors.black,
+                      color: Colors.cyan,
                       size: 40,
                     ),
                     Row(
                       children: [
                         Icon(
                           Icons.notifications_none,
-                          color: Colors.black,
+                          color: Colors.cyan,
                           size: 40,
                         ),
                         SizedBox(
@@ -39,6 +39,7 @@ class _ShopState extends State<Shop> {
                         ),
                         Icon(
                           Icons.person_outlined,
+                          color: Colors.cyan,
                           size: 40,
                         )
                       ],
