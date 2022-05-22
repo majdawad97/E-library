@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 
 import 'homePage.dart';
 
-class tabs extends StatefulWidget {
-  const tabs({Key? key}) : super(key: key);
+class Tabs extends StatefulWidget {
+  const Tabs({Key? key}) : super(key: key);
 
   @override
-  _tabsState createState() => _tabsState();
+  _TabsState createState() => _TabsState();
 }
 
-class _tabsState extends State<tabs> {
+class _TabsState extends State<Tabs> {
   int currentIndex = 0;
 
   List<Widget> pages = [

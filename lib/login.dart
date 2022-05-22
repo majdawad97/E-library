@@ -1,3 +1,4 @@
+import 'package:e_library/tabs.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -16,13 +17,6 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            // Container(
-            //   child: Image(
-            //     width: 400.0,
-            //     height: 300.0,
-            //     image: AssetImage('images/book3.jpg'),
-            //   ),
-            // ),
             Padding(
               padding: EdgeInsets.all(10.0),
               child: Material(
@@ -32,7 +26,12 @@ class LoginScreen extends StatelessWidget {
                 child: MaterialButton(
                   minWidth: MediaQuery.of(context).size.width,
                   padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Tabs()),
+                    );
+                  },
                   child: Text(
                     "Sign in",
                     style: TextStyle(color: Colors.cyan),
@@ -50,7 +49,12 @@ class LoginScreen extends StatelessWidget {
                 child: MaterialButton(
                   minWidth: MediaQuery.of(context).size.width,
                   padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Tabs()),
+                    );
+                  },
                   child: Text(
                     "Sign Up",
                     style: TextStyle(color: Colors.cyan),
