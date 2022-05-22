@@ -1,4 +1,5 @@
 import 'package:e_library/login.dart';
+import 'package:e_library/shop.dart';
 import 'package:flutter/material.dart';
 
 import 'homePage.dart';
@@ -15,7 +16,7 @@ class _TabsState extends State<Tabs> {
 
   List<Widget> pages = [
     HomePage(),
-    LoginScreen(),
+    Shop(),
   ];
   List<BottomNavigationBarItem> bottomItime = [
     BottomNavigationBarItem(icon: Icon(Icons.paste), label: '1'),
