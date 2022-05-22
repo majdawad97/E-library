@@ -1,4 +1,5 @@
 import 'package:e_library/homePage.dart';
+import 'package:e_library/signInPage.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -83,7 +84,7 @@ class SignUpScreen extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomePage(),
+                        builder: (context) => SignInScreen(),
                       ),
                     );
                   },
