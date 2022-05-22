@@ -27,21 +27,21 @@ class _HomePageState extends State<HomePage> {
                     Icon(
                       Icons.menu,
                       color: Colors.cyan,
-                      size: 40,
+                      size: 30,
                     ),
                     Row(
                       children: [
                         Icon(
                           Icons.notifications_none,
                           color: Colors.cyan,
-                          size: 40,
+                          size: 30,
                         ),
                         SizedBox(
                           width: 10,
                         ),
                         Icon(
                           Icons.person_outlined,
-                          size: 40,
+                          size: 30,
                           color: Colors.cyan,
                         )
                       ],
