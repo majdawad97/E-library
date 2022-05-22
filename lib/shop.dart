@@ -65,87 +65,68 @@ class _ShopState extends State<Shop> {
           backgroundColor: Colors.white,
         ),
         backgroundColor: Colors.white,
-        body: ResponsiveGridRow(
-          children: [
-            ResponsiveGridCol(
-              lg: 12,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: 100,
-                  alignment: Alignment(0, 0),
-                  color: Colors.purple,
-                  child: Text("lg : 12"),
-                ),
+        body: ListView(scrollDirection: Axis.vertical, children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 400,
+              width: 150,
+              color: Colors.white,
+              child: Column(
+                children: [
+                  Center(
+                      child: Image.asset(
+                    'images/Interaction_of_color.jpg',
+                    fit: BoxFit.cover,
+                    width: MediaQuery.of(context).size.width - 20,
+                    height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
+                  )),
+                  Text('book title'),
+                ],
               ),
             ),
-            ResponsiveGridCol(
-              xs: 6,
-              md: 3,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: 100,
-                  alignment: Alignment(0, 0),
-                  color: Colors.green,
-                  child: Text("xs : 6 \r\nmd : 3"),
-                ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 400,
+              width: 150,
+              color: Colors.white,
+              child: Column(
+                children: [
+                  Center(
+                      child: Image.asset(
+                    'images/steal_like_an_artist.jpg',
+                    fit: BoxFit.cover,
+                    width: MediaQuery.of(context).size.width - 20,
+                    height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
+                  )),
+                  Text('book title'),
+                ],
               ),
             ),
-            ResponsiveGridCol(
-              xs: 6,
-              md: 3,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: 100,
-                  alignment: Alignment(0, 0),
-                  color: Colors.orange,
-                  child: Text("xs : 6 \r\nmd : 3"),
-                ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              height: 400,
+              width: 150,
+              color: Colors.white,
+              child: Column(
+                children: [
+                  Center(
+                      child: Image.asset(
+                    'images/the_design_of_everyday_things.jpg',
+                    fit: BoxFit.cover,
+                    width: MediaQuery.of(context).size.width - 20,
+                    height: (MediaQuery.of(context).size.width - 20) * 60 / 100,
+                  )),
+                  Text('book title'),
+                ],
               ),
             ),
-            ResponsiveGridCol(
-              xs: 6,
-              md: 3,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: 100,
-                  alignment: Alignment(0, 0),
-                  color: Colors.red,
-                  child: Text("xs : 6 \r\nmd : 3"),
-                ),
-              ),
-            ),
-            ResponsiveGridCol(
-              xs: 6,
-              md: 3,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: 100,
-                  alignment: Alignment(0, 0),
-                  color: Colors.blue,
-                  child: Text("xs : 6 \r\nmd : 3"),
-                ),
-              ),
-            ),
-            ResponsiveGridCol(
-              xs: 6,
-              md: 3,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  height: 100,
-                  alignment: Alignment(0, 0),
-                  color: Colors.lime,
-                  child: Text("xs : 6 \r\nmd : 3"),
-                ),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ]),
       ),
     );
   }
