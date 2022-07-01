@@ -527,6 +527,56 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 400,
+                      width: 150,
+                      color: Colors.white,
+                      child: Column(
+                        children: [
+                          Center(
+                              child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Image.asset(
+                              'images/educated.jpg',
+                              fit: BoxFit.cover,
+                              width: MediaQuery.of(context).size.width - 20,
+                              height: (MediaQuery.of(context).size.width - 20) *
+                                  60 /
+                                  100,
+                            ),
+                          )),
+                          Text('Educated'),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 400,
+                      width: 150,
+                      color: Colors.white,
+                      child: Column(
+                        children: [
+                          Center(
+                              child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10.0),
+                            child: Image.asset(
+                              'images/intuition.jpg',
+                              fit: BoxFit.cover,
+                              width: MediaQuery.of(context).size.width - 20,
+                              height: (MediaQuery.of(context).size.width - 20) *
+                                  60 /
+                                  100,
+                            ),
+                          )),
+                          Text('Intuition'),
+                        ],
+                      ),
+                    ),
+                  ),
                 ]),
               ),
             ],
