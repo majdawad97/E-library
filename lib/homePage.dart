@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_library/conttroller/api_controller.dart';
+import 'package:e_library/favoritepage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
@@ -15,8 +16,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   // List<Books> bookslist = [];
   // ApiController apicontroller = ApiController();
-
-
 
   var title = '';
   bool loading = true;
@@ -34,8 +33,6 @@ class _HomePageState extends State<HomePage> {
   // }
 
   //add get books method
-
-
 
   String baseUrl = 'http://api.nytimes.com/svc/books/v3';
 
@@ -65,8 +62,6 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-
-
   @override
   void initState() {
     super.initState();
@@ -75,9 +70,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return loading ?
-    //add loading circle
-    Center(
+    return loading
+        ?
+        //add loading circle
+        Center(
             child: CircularProgressIndicator(
             color: Colors.blue,
           ))
@@ -152,7 +148,15 @@ class _HomePageState extends State<HomePage> {
                                   fontWeight: FontWeight.bold, fontSize: 25),
                               textAlign: TextAlign.left,
                             ),
-                            Text('See all')
+                            InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Favorate()),
+                                  );
+                                },
+                                child: Text('See all'))
                           ],
                         ),
                       ),
@@ -209,33 +213,33 @@ class _HomePageState extends State<HomePage> {
                                         style: TextStyle(fontSize: 20),
                                       ),
                                       Text('Auston kleon'),
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(top: 40.0),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text('Progress'),
-                                            Row(
-                                              children: [
-                                                Container(
-                                                    height: 10,
-                                                    width: 200,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              50),
-                                                      color: Colors.cyan,
-                                                    )),
-                                                Text('100%')
-                                              ],
-                                            ),
-                                          ],
-                                        ),
-                                      ),
+                                      // Padding(
+                                      //   padding:
+                                      //       const EdgeInsets.only(top: 40.0),
+                                      //   child: Column(
+                                      //     mainAxisAlignment:
+                                      //         MainAxisAlignment.start,
+                                      //     crossAxisAlignment:
+                                      //         CrossAxisAlignment.start,
+                                      //     children: [
+                                      //       Text('Progress'),
+                                      //       Row(
+                                      //         children: [
+                                      //           Container(
+                                      //               height: 10,
+                                      //               width: 200,
+                                      //               decoration: BoxDecoration(
+                                      //                 borderRadius:
+                                      //                     BorderRadius.circular(
+                                      //                         50),
+                                      //                 color: Colors.cyan,
+                                      //               )),
+                                      //           Text('100%')
+                                      //         ],
+                                      //       ),
+                                      //     ],
+                                      //   ),
+                                      // ),
                                     ],
                                   ),
                                 ),
@@ -272,32 +276,32 @@ class _HomePageState extends State<HomePage> {
                                       style: TextStyle(fontSize: 20),
                                     ),
                                     Text('Josef Albos'),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 40.0),
-                                      child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.start,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text('Progress'),
-                                          Row(
-                                            children: [
-                                              Container(
-                                                  height: 10,
-                                                  width: 200,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            50),
-                                                    color: Colors.cyan,
-                                                  )),
-                                              Text('100%')
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    ),
+                                    // Padding(
+                                    //   padding: const EdgeInsets.only(top: 40.0),
+                                    //   child: Column(
+                                    //     mainAxisAlignment:
+                                    //         MainAxisAlignment.start,
+                                    //     crossAxisAlignment:
+                                    //         CrossAxisAlignment.start,
+                                    //     children: [
+                                    //       Text('Progress'),
+                                    //       Row(
+                                    //         children: [
+                                    //           Container(
+                                    //               height: 10,
+                                    //               width: 200,
+                                    //               decoration: BoxDecoration(
+                                    //                 borderRadius:
+                                    //                     BorderRadius.circular(
+                                    //                         50),
+                                    //                 color: Colors.cyan,
+                                    //               )),
+                                    //           Text('100%')
+                                    //         ],
+                                    //       ),
+                                    //     ],
+                                    //   ),
+                                    // ),
                                   ],
                                 ),
                               ),
@@ -325,48 +329,48 @@ class _HomePageState extends State<HomePage> {
                                         100,
                                   ),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 20.0),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        'THE DESIGN OF EVERY DAY\n THINGS',
-                                        style: TextStyle(fontSize: 20),
-                                      ),
-                                      Text('Don Norman'),
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(top: 15.0),
-                                        child: Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text('Progress'),
-                                            Row(
-                                              children: [
-                                                Container(
-                                                    height: 10,
-                                                    width: 200,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              50),
-                                                      color: Colors.cyan,
-                                                    )),
-                                                Text('100%')
-                                              ],
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
+                                // Padding(
+                                //   padding: const EdgeInsets.only(left: 20.0),
+                                //   child: Column(
+                                //     mainAxisAlignment: MainAxisAlignment.start,
+                                //     crossAxisAlignment:
+                                //         CrossAxisAlignment.start,
+                                //     children: [
+                                //       Text(
+                                //         'THE DESIGN OF EVERY DAY\n THINGS',
+                                //         style: TextStyle(fontSize: 20),
+                                //       ),
+                                //       Text('Don Norman'),
+                                //       Padding(
+                                //         padding:
+                                //             const EdgeInsets.only(top: 15.0),
+                                //         child: Column(
+                                //           mainAxisAlignment:
+                                //               MainAxisAlignment.start,
+                                //           crossAxisAlignment:
+                                //               CrossAxisAlignment.start,
+                                //           children: [
+                                //             Text('Progress'),
+                                //             Row(
+                                //               children: [
+                                //                 Container(
+                                //                     height: 10,
+                                //                     width: 200,
+                                //                     decoration: BoxDecoration(
+                                //                       borderRadius:
+                                //                           BorderRadius.circular(
+                                //                               50),
+                                //                       color: Colors.cyan,
+                                //                     )),
+                                //                 Text('100%')
+                                //               ],
+                                //             ),
+                                //           ],
+                                //         ),
+                                //       ),
+                                //     ],
+                                //   ),
+                                // ),
                               ],
                             ),
                           )),
@@ -384,12 +388,12 @@ class _HomePageState extends State<HomePage> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              'For You',
+                              'Category',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 20),
                               textAlign: TextAlign.left,
                             ),
-                            Icon(Icons.filter_list),
+                            Text('See all')
                           ],
                         ),
                       ),
@@ -416,8 +420,8 @@ class _HomePageState extends State<HomePage> {
                                         fontWeight: FontWeight.normal),
                                   )),
                               style: TextButton.styleFrom(
-                                  backgroundColor: Colors.cyan,
-                                  primary: Colors.white,
+                                  backgroundColor: Colors.white,
+                                  primary: Colors.grey,
                                   shape: RoundedRectangleBorder(
                                     side: BorderSide(
                                       color: Colors.cyan,
