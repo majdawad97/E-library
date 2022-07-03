@@ -1,6 +1,7 @@
+import 'package:e_library/settings.dart';
 import 'package:flutter/material.dart';
 import 'library.dart';
-
+import 'settings.dart';
 import 'homePage.dart';
 
 class Tabs extends StatefulWidget {
@@ -16,6 +17,7 @@ class _TabsState extends State<Tabs> {
   List<Widget> pages = [
     HomePage(),
     Library(),
+    Settings(),
   ];
   List<BottomNavigationBarItem> bottomItime = [
     BottomNavigationBarItem(
@@ -24,9 +26,9 @@ class _TabsState extends State<Tabs> {
         ),
         label: 'Home'),
     BottomNavigationBarItem(icon: Icon(Icons.store_rounded), label: 'Library'),
-    BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorate'),
+    BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'Favorite'),
     BottomNavigationBarItem(
-        icon: Icon(Icons.settings_rounded), label: 'Setting'),
+        icon: Icon(Icons.settings_rounded), label: 'Settings'),
   ];
 
   @override
