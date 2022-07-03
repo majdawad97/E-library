@@ -10,6 +10,6 @@ class Favorate extends StatefulWidget {
 class _FavorateState extends State<Favorate> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
