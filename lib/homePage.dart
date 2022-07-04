@@ -1,12 +1,12 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:e_library/conttroller/api_controller.dart';
+// import 'package:e_library/conttroller/api_controller.dart';
 import 'package:e_library/favoritepage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-import 'model/booksModel.dart';
+// import 'model/booksModel.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -185,7 +185,7 @@ class _HomePageState extends State<HomePage> {
                             initialPage: 0,
                             enableInfiniteScroll: true,
                             reverse: false,
-                            autoPlay: false,
+                            autoPlay: true,
                             autoPlayInterval: Duration(seconds: 3),
                             autoPlayAnimationDuration:
                                 Duration(milliseconds: 800),
@@ -458,7 +458,7 @@ class _HomePageState extends State<HomePage> {
                                         primary: Colors.grey,
                                         shape: RoundedRectangleBorder(
                                           side: BorderSide(
-                                            color: Colors.black,
+                                            color: Colors.cyan,
                                           ),
                                           borderRadius: BorderRadius.all(
                                               Radius.circular(20)),
