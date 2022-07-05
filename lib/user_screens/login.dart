@@ -1,5 +1,5 @@
-import 'package:e_library/signInPage.dart';
-import 'package:e_library/signUpPage.dart';
+import 'package:e_library/user_screens/signInPage.dart';
+import 'package:e_library/user_screens/signUpPage.dart';
 import 'package:e_library/tabs.dart';
 import 'package:flutter/material.dart';
 

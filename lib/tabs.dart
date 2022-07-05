@@ -1,10 +1,10 @@
-import 'package:e_library/category.dart';
-import 'package:e_library/favoritepage.dart';
-import 'package:e_library/settings.dart';
+import 'package:e_library/main_screen/category.dart';
+import 'package:e_library/main_screen/favoritepage.dart';
+import 'package:e_library/main_screen/settings.dart';
 import 'package:flutter/material.dart';
-import 'library.dart';
+import 'main_screen/library.dart';
 
-import 'homePage.dart';
+import 'main_screen/homePage.dart';
 
 class Tabs extends StatefulWidget {
   const Tabs({Key? key}) : super(key: key);
