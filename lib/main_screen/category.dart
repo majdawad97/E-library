@@ -73,178 +73,218 @@ class _CategoryState extends State<Category> {
             elevation: 0,
             backgroundColor: Colors.white,
           ),
-          body: Padding(
-            padding: const EdgeInsets.fromLTRB(0.0, 50.0, 0.0, 0.0),
-            child: Column(
-              children: [
-                TextButton(
-                  onPressed: () {},
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Container(
-                      height: 80.0,
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.cyan,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(
-                              height: 20,
-                            ),
-                            Text(
-                              'Design',
-                              style:
-                                  TextStyle(fontSize: 30, color: Colors.white),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios_outlined,
-                              color: Colors.white,
-                            ),
-                          ],
-                        ),
+          body: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        'Categories',
+                        style: TextStyle(fontSize: 25, color: Colors.cyan),
                       ),
                     ),
                   ),
-                ),
-                SizedBox(
-                  height: 25,
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Container(
-                      height: 80.0,
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.cyan,
-                      child: Padding(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(
-                              height: 20,
+                        child: TextButton(
+                          onPressed: () {},
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.design_services_outlined,
+                                  size: 160,
+                                  color: Colors.cyan,
+                                ),
+                                Text(
+                                  'Design',
+                                  style: TextStyle(
+                                      fontSize: 20, color: Colors.cyan),
+                                ),
+                              ],
                             ),
-                            Text(
-                              'Finction',
-                              style:
-                                  TextStyle(fontSize: 30, color: Colors.white),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios_outlined,
-                              color: Colors.white,
-                            ),
-                          ],
+                          ),
+                          style: TextButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              primary: Colors.grey,
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.cyan,
+                                ),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              )),
                         ),
                       ),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 25,
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Container(
-                      height: 80.0,
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.cyan,
-                      child: Padding(
+                      Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(
-                              height: 20,
+                        child: TextButton(
+                          onPressed: () {},
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.stacked_line_chart_sharp,
+                                  size: 160,
+                                  color: Colors.cyan,
+                                ),
+                                Text(
+                                  'Fiction',
+                                  style: TextStyle(
+                                      fontSize: 20, color: Colors.cyan),
+                                ),
+                              ],
                             ),
-                            Text(
-                              'Science Fiction',
-                              style:
-                                  TextStyle(fontSize: 30, color: Colors.white),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios_outlined,
-                              color: Colors.white,
-                            ),
-                          ],
+                          ),
+                          style: TextButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              primary: Colors.grey,
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.cyan,
+                                ),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              )),
                         ),
                       ),
-                    ),
+                    ],
                   ),
-                ),
-                SizedBox(
-                  height: 25,
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Container(
-                      height: 80.0,
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.cyan,
-                      child: Padding(
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(
-                              height: 20,
+                        child: TextButton(
+                          onPressed: () {},
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.science_sharp,
+                                  size: 160,
+                                  color: Colors.cyan,
+                                ),
+                                Text(
+                                  'Science Fiction',
+                                  style: TextStyle(
+                                      fontSize: 20, color: Colors.cyan),
+                                ),
+                              ],
                             ),
-                            Text(
-                              'Astrology',
-                              style:
-                                  TextStyle(fontSize: 30, color: Colors.white),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios_outlined,
-                              color: Colors.white,
-                            ),
-                          ],
+                          ),
+                          style: TextButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              primary: Colors.grey,
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.cyan,
+                                ),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              )),
                         ),
                       ),
-                    ),
-                  ),
-                ),
-                SizedBox(
-                  height: 25,
-                ),
-                TextButton(
-                  onPressed: () {},
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15),
-                    child: Container(
-                      height: 80.0,
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.cyan,
-                      child: Padding(
+                      Padding(
                         padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            SizedBox(
-                              height: 20,
+                        child: TextButton(
+                          onPressed: () {},
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.star,
+                                  size: 160,
+                                  color: Colors.cyan,
+                                ),
+                                Text(
+                                  'Astrology',
+                                  style: TextStyle(
+                                      fontSize: 20, color: Colors.cyan),
+                                ),
+                              ],
                             ),
-                            Text(
-                              'Stories',
-                              style:
-                                  TextStyle(fontSize: 30, color: Colors.white),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios_outlined,
-                              color: Colors.white,
-                            ),
-                          ],
+                          ),
+                          style: TextButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              primary: Colors.grey,
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.cyan,
+                                ),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              )),
                         ),
                       ),
-                    ),
+                    ],
                   ),
-                ),
-              ],
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: TextButton(
+                          onPressed: () {},
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Icon(
+                                  Icons.book_outlined,
+                                  size: 160,
+                                  color: Colors.cyan,
+                                ),
+                                Text(
+                                  'Stories',
+                                  style: TextStyle(
+                                      fontSize: 20, color: Colors.cyan),
+                                ),
+                              ],
+                            ),
+                          ),
+                          style: TextButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              primary: Colors.grey,
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  color: Colors.cyan,
+                                ),
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(20)),
+                              )),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           )),
     );
