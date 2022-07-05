@@ -288,7 +288,7 @@ class _HomePageState extends State<HomePage> {
                                 fit: BoxFit.cover,
                                 width: MediaQuery.of(context).size.width - 20,
                                 height:
-                                     (MediaQuery.of(context).size.width - 20) *
+                                    (MediaQuery.of(context).size.width - 20) *
                                         60 /
                                         100,
                               ),
