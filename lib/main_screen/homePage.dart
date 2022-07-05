@@ -300,7 +300,7 @@ class _HomePageState extends State<HomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'THE DESIGN OF EVERY DAY\n THINGS',
+                                    'THE DESIGN OF EVERY\n DAY THINGS',
                                     style: TextStyle(fontSize: 20),
                                   ),
                                   SizedBox(

@@ -15,9 +15,10 @@ class _CategoryState extends State<Category> {
       child: Scaffold(
           backgroundColor: Colors.white,
           appBar: AppBar(
-            toolbarHeight: 80,
+            automaticallyImplyLeading: false,
+            toolbarHeight: 70,
             flexibleSpace: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.all(20),
               child: Column(
                 children: [
                   Row(
@@ -73,125 +74,173 @@ class _CategoryState extends State<Category> {
             backgroundColor: Colors.white,
           ),
           body: Padding(
-            padding: const EdgeInsets.fromLTRB(0.0, 40.0, 0.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(0.0, 50.0, 0.0, 0.0),
             child: Column(
               children: [
-                Container(
-                  height: 80,
-                  width: MediaQuery.of(context).size.width,
-                  child: Card(
-                    shadowColor: Colors.cyan,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        SizedBox(
-                          height: 20,
+                TextButton(
+                  onPressed: () {},
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
+                      height: 80.0,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.cyan,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              'Design',
+                              style:
+                                  TextStyle(fontSize: 30, color: Colors.white),
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios_outlined,
+                              color: Colors.white,
+                            ),
+                          ],
                         ),
-                        Text(
-                          'Design',
-                          style: TextStyle(fontSize: 30, color: Colors.cyan),
-                        ),
-                        Icon(
-                          Icons.arrow_forward_ios_outlined,
-                          color: Colors.cyan,
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 25,
                 ),
-                Container(
-                  height: 80,
-                  width: MediaQuery.of(context).size.width,
-                  child: Card(
-                    shadowColor: Colors.cyan,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        SizedBox(
-                          height: 20,
+                TextButton(
+                  onPressed: () {},
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
+                      height: 80.0,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.cyan,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              'Finction',
+                              style:
+                                  TextStyle(fontSize: 30, color: Colors.white),
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios_outlined,
+                              color: Colors.white,
+                            ),
+                          ],
                         ),
-                        Text('Fiction',
-                            style: TextStyle(fontSize: 30, color: Colors.cyan)),
-                        Icon(
-                          Icons.arrow_forward_ios_outlined,
-                          color: Colors.cyan,
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 25,
                 ),
-                Container(
-                  height: 80,
-                  width: MediaQuery.of(context).size.width,
-                  child: Card(
-                    shadowColor: Colors.cyan,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        SizedBox(
-                          height: 20,
+                TextButton(
+                  onPressed: () {},
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
+                      height: 80.0,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.cyan,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              'Science Fiction',
+                              style:
+                                  TextStyle(fontSize: 30, color: Colors.white),
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios_outlined,
+                              color: Colors.white,
+                            ),
+                          ],
                         ),
-                        Text('Science Fiction',
-                            style: TextStyle(fontSize: 30, color: Colors.cyan)),
-                        Icon(
-                          Icons.arrow_forward_ios_outlined,
-                          color: Colors.cyan,
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 25,
                 ),
-                Container(
-                  height: 80,
-                  width: MediaQuery.of(context).size.width,
-                  child: Card(
-                    shadowColor: Colors.cyan,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        SizedBox(
-                          height: 20,
+                TextButton(
+                  onPressed: () {},
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
+                      height: 80.0,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.cyan,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              'Astrology',
+                              style:
+                                  TextStyle(fontSize: 30, color: Colors.white),
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios_outlined,
+                              color: Colors.white,
+                            ),
+                          ],
                         ),
-                        Text('Action',
-                            style: TextStyle(fontSize: 30, color: Colors.cyan)),
-                        Icon(
-                          Icons.arrow_forward_ios_outlined,
-                          color: Colors.cyan,
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 25,
                 ),
-                Container(
-                  height: 80,
-                  width: MediaQuery.of(context).size.width,
-                  child: Card(
-                    shadowColor: Colors.cyan,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        SizedBox(
-                          height: 20,
+                TextButton(
+                  onPressed: () {},
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Container(
+                      height: 80.0,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.cyan,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Text(
+                              'Stories',
+                              style:
+                                  TextStyle(fontSize: 30, color: Colors.white),
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios_outlined,
+                              color: Colors.white,
+                            ),
+                          ],
                         ),
-                        Text('Stories',
-                            style: TextStyle(fontSize: 30, color: Colors.cyan)),
-                        Icon(
-                          Icons.arrow_forward_ios_outlined,
-                          color: Colors.cyan,
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
