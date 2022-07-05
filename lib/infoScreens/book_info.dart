@@ -126,7 +126,7 @@ class Book extends StatelessWidget {
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.0),
                 child: Text(
-                  'fdjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkde3aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaakkkkkkkkkkkkkkkkkkkk',
+                  '"The author of the Outlander novels gives tips on writing act scenes, drawing on examples from the books."',
                   style: TextStyle(fontSize: 15.0),
                 ),
               ),
