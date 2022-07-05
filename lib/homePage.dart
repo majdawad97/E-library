@@ -14,23 +14,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // List<Books> bookslist = [];
-  // ApiController apicontroller = ApiController();
-
   var title = '';
   bool loading = true;
-  // void get_books_list() async {
-  //   setState(() {
-  //     loading = true;
-  //   });
-  //
-  //   var data = await apicontroller.get_books();
-  //   bookslist =
-  //       (data['result']).map<Books>((item) => Books.fromJson(item)).toList();
-  //   setState(() {
-  //     loading = false;
-  //   });
-  // }
 
   //add get books method
 
@@ -120,19 +105,6 @@ class _HomePageState extends State<HomePage> {
                           )
                         ],
                       ),
-                      // Padding(
-                      //   padding: const EdgeInsets.all(15.0),
-                      //   child: Container(
-                      //       decoration: BoxDecoration(
-                      //           border: Border.all(color: Colors.black),
-                      //           borderRadius: BorderRadius.circular(10)),
-                      //       child: TextFormField(
-                      //         decoration: InputDecoration(
-                      //             hintText: 'Search',
-                      //             prefixIcon: Icon(Icons.search),
-                      //             suffixIcon: Icon(Icons.filter_list_sharp)),
-                      //       )),
-                      // ),
                     ],
                   ),
                 ),
@@ -234,33 +206,6 @@ class _HomePageState extends State<HomePage> {
                                           height: 15,
                                         ),
                                         Text('Auston kleon'),
-                                        // Padding(
-                                        //   padding:
-                                        //       const EdgeInsets.only(top: 40.0),
-                                        //   child: Column(
-                                        //     mainAxisAlignment:
-                                        //         MainAxisAlignment.start,
-                                        //     crossAxisAlignment:
-                                        //         CrossAxisAlignment.start,
-                                        //     children: [
-                                        //       Text('Progress'),
-                                        //       Row(
-                                        //         children: [
-                                        //           Container(
-                                        //               height: 10,
-                                        //               width: 200,
-                                        //               decoration: BoxDecoration(
-                                        //                 borderRadius:
-                                        //                     BorderRadius.circular(
-                                        //                         50),
-                                        //                 color: Colors.cyan,
-                                        //               )),
-                                        //           Text('100%')
-                                        //         ],
-                                        //       ),
-                                        //     ],
-                                        //   ),
-                                        // ),
                                       ],
                                     ),
                                   ),
@@ -302,32 +247,6 @@ class _HomePageState extends State<HomePage> {
                                         height: 15,
                                       ),
                                       Text('Josef Albos'),
-                                      // Padding(
-                                      //   padding: const EdgeInsets.only(top: 40.0),
-                                      //   child: Column(
-                                      //     mainAxisAlignment:
-                                      //         MainAxisAlignment.start,
-                                      //     crossAxisAlignment:
-                                      //         CrossAxisAlignment.start,
-                                      //     children: [
-                                      //       Text('Progress'),
-                                      //       Row(
-                                      //         children: [
-                                      //           Container(
-                                      //               height: 10,
-                                      //               width: 200,
-                                      //               decoration: BoxDecoration(
-                                      //                 borderRadius:
-                                      //                     BorderRadius.circular(
-                                      //                         50),
-                                      //                 color: Colors.cyan,
-                                      //               )),
-                                      //           Text('100%')
-                                      //         ],
-                                      //       ),
-                                      //     ],
-                                      //   ),
-                                      // ),
                                     ],
                                   ),
                                 ),
@@ -372,33 +291,6 @@ class _HomePageState extends State<HomePage> {
                                           height: 15,
                                         ),
                                         Text('Don Norman'),
-                                        // Padding(
-                                        //   padding:
-                                        //       const EdgeInsets.only(top: 15.0),
-                                        //   child: Column(
-                                        //     mainAxisAlignment:
-                                        //         MainAxisAlignment.start,
-                                        //     crossAxisAlignment:
-                                        //         CrossAxisAlignment.start,
-                                        //     children: [
-                                        //       Text('Progress'),
-                                        //       Row(
-                                        //         children: [
-                                        //           Container(
-                                        //               height: 10,
-                                        //               width: 200,
-                                        //               decoration: BoxDecoration(
-                                        //                 borderRadius:
-                                        //                     BorderRadius.circular(
-                                        //                         50),
-                                        //                 color: Colors.cyan,
-                                        //               )),
-                                        //           Text('100%')
-                                        //         ],
-                                        //       ),
-                                        //     ],
-                                        //   ),
-                                        // ),
                                       ],
                                     ),
                                   ),

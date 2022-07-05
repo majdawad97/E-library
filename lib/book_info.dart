@@ -137,14 +137,16 @@ class Book extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(15),
                 child: Container(
-                    height: 45.0,
-                    width: MediaQuery.of(context).size.width,
-                    color: Colors.cyan,
-                    child: Center(
-                        child: Text(
+                  height: 45.0,
+                  width: MediaQuery.of(context).size.width,
+                  color: Colors.cyan,
+                  child: Center(
+                    child: Text(
                       'Buy Book',
                       style: TextStyle(color: Colors.white, fontSize: 20.0),
-                    ))),
+                    ),
+                  ),
+                ),
               ),
             ),
           ],
