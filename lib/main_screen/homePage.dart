@@ -1,10 +1,14 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:e_library/data/books_data.dart';
+import 'package:e_library/infoScreens/book_info.dart';
 // import 'package:e_library/conttroller/api_controller.dart';
 import 'package:e_library/main_screen/favoritepage.dart';
+import 'package:e_library/widget/book_preview_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:e_library/infoScreens/book_info.dart';
 
 // import 'model/booksModel.dart';
 
@@ -14,69 +18,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // // List<Books> bookslist = [];
-  // // ApiController apicontroller = ApiController();
-  //
-  // var title = '';
-  // bool loading = true;
-  //
-  // // void get_books_list() async {
-  // //   setState(() {
-  // //     loading = true;
-  // //   });
-  // //
-  // //   var data = await apicontroller.get_books();
-  // //   bookslist =
-  // //       (data['result']).map<Books>((item) => Books.fromJson(item)).toList();
-  // //   setState(() {
-  // //     loading = false;
-  // //   });
-  // // }
-  //
-  // //add get books method
-  // String baseUrl = 'http://api.nytimes.com/svc/books/v3';
-  // // Future get_books() async {
-  // //   String myurl =
-  // //       '$baseUrl/lists/best-sellers/history.json?api-key=rU8sBxQh7CzMvuTZ2KCVb6xq4wO4uJf2';
-  // //
-  // //   setState(() {
-  // //     loading = true;
-  // //   });
-  // //
-  // //   http.Response response = await http.get(Uri.parse(myurl));
-  // //   if (response.statusCode == 200) {
-  // //     var data = response.body;
-  // //
-  // //     var decodedData = jsonDecode(data);
-  // //
-  // //     title = decodedData['results'][0]['title'];
-  // //
-  // //     print(data);
-  // //     print(response.statusCode);
-  // //     setState(() {
-  // //       loading = false;
-  // //     });
-  // //
-  // //     return decodedData;
-  // //   }
-  // // }
-
-  @override
-  void initState() {
-    super.initState();
-    //  get_books();
-  }
-
   @override
   Widget build(BuildContext context) {
-    //  loading
-    //     ?
-    //     //add loading circle
-    //     Center(
-    //         child: CircularProgressIndicator(
-    //         color: Colors.blue,
-    //       ))
-    //     :
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
@@ -120,19 +63,6 @@ class _HomePageState extends State<HomePage> {
                     )
                   ],
                 ),
-                // Padding(
-                //   padding: const EdgeInsets.all(15.0),
-                //   child: Container(
-                //       decoration: BoxDecoration(
-                //           border: Border.all(color: Colors.black),
-                //           borderRadius: BorderRadius.circular(10)),
-                //       child: TextFormField(
-                //         decoration: InputDecoration(
-                //             hintText: 'Search',
-                //             prefixIcon: Icon(Icons.search),
-                //             suffixIcon: Icon(Icons.filter_list_sharp)),
-                //       )),
-                // ),
               ],
             ),
           ),
@@ -237,42 +167,44 @@ class _HomePageState extends State<HomePage> {
                       )),
                       //item2
                       Card(
-                          child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: 120,
-                            width: 80,
-                            child: Image.asset(
-                              'images/Interaction_of_color.jpg',
-                              fit: BoxFit.cover,
-                              width: MediaQuery.of(context).size.width - 20,
-                              height: (MediaQuery.of(context).size.width - 20) *
-                                  60 /
-                                  100,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 120,
+                              width: 80,
+                              child: Image.asset(
+                                'images/Interaction_of_color.jpg',
+                                fit: BoxFit.cover,
+                                width: MediaQuery.of(context).size.width - 20,
+                                height:
+                                    (MediaQuery.of(context).size.width - 20) *
+                                        60 /
+                                        100,
+                              ),
                             ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 20.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'INTERACTION OF COLOR',
-                                  style: TextStyle(fontSize: 20),
-                                ),
-                                SizedBox(
-                                  height: 15,
-                                ),
-                                Text('Josef Albos'),
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.only(left: 20.0),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'INTERACTION OF COLOR',
+                                    style: TextStyle(fontSize: 20),
+                                  ),
+                                  SizedBox(
+                                    height: 15,
+                                  ),
+                                  Text('Josef Albos'),
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
-                      )),
-                      //item3
+                          ],
+                        ),
+                      ),
+
                       Card(
                           child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -480,138 +412,15 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   height: 280,
                   margin: const EdgeInsets.only(top: 5, bottom: 10),
-                  child: ListView(scrollDirection: Axis.horizontal, children: <
-                      Widget>[
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        height: 400,
-                        width: 150,
-                        color: Colors.white,
-                        child: Column(
-                          children: [
-                            Center(
-                                child: Image.asset(
-                              'images/Interaction_of_color.jpg',
-                              fit: BoxFit.cover,
-                              width: MediaQuery.of(context).size.width - 20,
-                              height: (MediaQuery.of(context).size.width - 20) *
-                                  60 /
-                                  100,
-                            )),
-                            Text('Intreaction Of Color'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        height: 400,
-                        width: 150,
-                        color: Colors.white,
-                        child: Column(
-                          children: [
-                            Center(
-                                child: ClipRRect(
-                              borderRadius: BorderRadius.circular(10.0),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(10.0),
-                                child: Image.asset(
-                                  'images/steal_like_an_artist.jpg',
-                                  fit: BoxFit.cover,
-                                  width: MediaQuery.of(context).size.width - 20,
-                                  height:
-                                      (MediaQuery.of(context).size.width - 20) *
-                                          60 /
-                                          100,
-                                ),
-                              ),
-                            )),
-                            Text('Steal like an artist'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        height: 400,
-                        width: 150,
-                        color: Colors.white,
-                        child: Column(
-                          children: [
-                            Center(
-                                child: ClipRRect(
-                              borderRadius: BorderRadius.circular(10.0),
-                              child: Image.asset(
-                                'images/the_design_of_everyday_things.jpg',
-                                fit: BoxFit.cover,
-                                width: MediaQuery.of(context).size.width - 20,
-                                height:
-                                    (MediaQuery.of(context).size.width - 20) *
-                                        60 /
-                                        100,
-                              ),
-                            )),
-                            Text('The Design of Things'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        height: 400,
-                        width: 150,
-                        color: Colors.white,
-                        child: Column(
-                          children: [
-                            Center(
-                                child: ClipRRect(
-                              borderRadius: BorderRadius.circular(10.0),
-                              child: Image.asset(
-                                'images/educated.jpg',
-                                fit: BoxFit.cover,
-                                width: MediaQuery.of(context).size.width - 20,
-                                height:
-                                    (MediaQuery.of(context).size.width - 20) *
-                                        60 /
-                                        100,
-                              ),
-                            )),
-                            Text('Educated'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        height: 400,
-                        width: 150,
-                        color: Colors.white,
-                        child: Column(
-                          children: [
-                            Center(
-                                child: ClipRRect(
-                              borderRadius: BorderRadius.circular(10.0),
-                              child: Image.asset(
-                                'images/intuition.jpg',
-                                fit: BoxFit.cover,
-                                width: MediaQuery.of(context).size.width - 20,
-                                height:
-                                    (MediaQuery.of(context).size.width - 20) *
-                                        60 /
-                                        100,
-                              ),
-                            )),
-                            Text('Intuition'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ]),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: booksData.length,
+                    itemBuilder: (context, index) {
+                      return BookPreviewWidget(
+                        book: booksData[index],
+                      );
+                    },
+                  ),
                 ),
               ],
             ),

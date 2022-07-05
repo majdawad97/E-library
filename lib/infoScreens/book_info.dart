@@ -1,10 +1,14 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'dart:ui';
-
+import 'package:e_library/models/book_model.dart';
 import 'package:flutter/material.dart';
 
-class Book extends StatelessWidget {
+class BookScreen extends StatelessWidget {
+  final Book book;
+
+  const BookScreen({
+    Key? key,
+    required this.book,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,74 +38,78 @@ class Book extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(15),
                       child: Image.asset(
-                        'images/all-this-time.jpg',
+                        book.image,
                         height: 200,
                       ),
                     ),
                   ),
                 ),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        margin: EdgeInsets.only(top: 10),
-                        child: Text(
-                          'Rodney Stone',
-                          style: TextStyle(fontSize: 30),
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          margin: EdgeInsets.only(top: 10),
+                          child: Text(
+                            book.title,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(fontSize: 30),
+                          ),
                         ),
                       ),
-                    ),
-                    Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            child: Text(
-                              'by',
-                              style:
-                                  TextStyle(fontSize: 15, color: Colors.grey),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            child: Text(
-                              'Arthur Conan',
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  color: Colors.indigo,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.only(top: 60.0),
-                          child: Padding(
+                      Row(
+                        children: [
+                          Padding(
                             padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              child: Text(
+                                'by',
+                                style:
+                                    TextStyle(fontSize: 15, color: Colors.grey),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              child: Text(
+                                book.author,
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    color: Colors.indigo,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 60.0),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'Rating : ',
+                                style: TextStyle(fontSize: 20.0),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(top: 60.0),
                             child: Text(
-                              'Rating : ',
+                              '8/10',
                               style: TextStyle(fontSize: 20.0),
                             ),
                           ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(top: 60.0),
-                          child: Text(
-                            '8/10',
-                            style: TextStyle(fontSize: 20.0),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -126,7 +134,7 @@ class Book extends StatelessWidget {
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 20.0),
                 child: Text(
-                  '"The author of the Outlander novels gives tips on writing act scenes, drawing on examples from the books."',
+                  book.description,
                   style: TextStyle(fontSize: 15.0),
                 ),
               ),
