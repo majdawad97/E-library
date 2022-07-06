@@ -5,20 +5,19 @@ import 'package:e_library/widget/book_preview_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-class Favorites extends StatefulWidget {
-  const Favorites({Key? key}) : super(key: key);
+class ScienceScreen extends StatefulWidget {
+  const ScienceScreen({Key? key}) : super(key: key);
 
   @override
-  _FavoritesState createState() => _FavoritesState();
+  _ScienceScreenState createState() => _ScienceScreenState();
 }
 
-class _FavoritesState extends State<Favorites> {
+class _ScienceScreenState extends State<ScienceScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
           toolbarHeight: 160,
           flexibleSpace: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -51,9 +50,36 @@ class _FavoritesState extends State<Favorites> {
                     ),
                   ],
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(10)),
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                            hintText: 'Search',
+                            prefixIcon: Icon(Icons.search),
+                            suffixIcon: Icon(Icons.filter_list_sharp)),
+                      )),
+                ),
               ],
             ),
           ),
+          elevation: 0,
+          backgroundColor: Colors.white,
+        ),
+        backgroundColor: Colors.white,
+        body: GridView(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisSpacing: 5, mainAxisSpacing: 10, crossAxisCount: 3),
+          children: [
+            Image.asset('images/the gene.jpeg'),
+            Image.asset('images/the man.jpeg'),
+            Image.asset('images/guns.jpeg'),
+            Image.asset('images/handbook.jpeg'),
+            Image.asset('images/breath.png'),
+          ],
         ),
       ),
     );

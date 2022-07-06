@@ -5,20 +5,19 @@ import 'package:e_library/widget/book_preview_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-class Favorites extends StatefulWidget {
-  const Favorites({Key? key}) : super(key: key);
+class DesignScreen extends StatefulWidget {
+  const DesignScreen({Key? key}) : super(key: key);
 
   @override
-  _FavoritesState createState() => _FavoritesState();
+  _DesignScreenState createState() => _DesignScreenState();
 }
 
-class _FavoritesState extends State<Favorites> {
+class _DesignScreenState extends State<DesignScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
           toolbarHeight: 160,
           flexibleSpace: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -51,9 +50,37 @@ class _FavoritesState extends State<Favorites> {
                     ),
                   ],
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(10)),
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                            hintText: 'Search',
+                            prefixIcon: Icon(Icons.search),
+                            suffixIcon: Icon(Icons.filter_list_sharp)),
+                      )),
+                ),
               ],
             ),
           ),
+          elevation: 0,
+          backgroundColor: Colors.white,
+        ),
+        backgroundColor: Colors.white,
+        body: GridView(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisSpacing: 5, mainAxisSpacing: 10, crossAxisCount: 3),
+          children: [
+            Image.asset('images/dont make me think.jpeg'),
+            Image.asset('images/thinking with type.jpeg'),
+            Image.asset('images/product design.jpeg'),
+            Image.asset('images/logo design love.png'),
+            Image.asset('images/the_design_of_everyday_things.jpg'),
+            Image.asset('images/Interaction_of_color.jpg'),
+          ],
         ),
       ),
     );

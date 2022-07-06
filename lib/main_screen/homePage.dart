@@ -96,7 +96,7 @@ class _HomePageState extends State<HomePage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Favorate()),
+                                    builder: (context) => Favorites()),
                               );
                             },
                             child: Text('See all'))

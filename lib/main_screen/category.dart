@@ -1,3 +1,5 @@
+import 'package:e_library/categories/design.dart';
+import 'package:e_library/categories/science.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -91,7 +93,14 @@ class _CategoryState extends State<Category> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DesignScreen(),
+                              ),
+                            );
+                          },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15),
                             child: Column(
@@ -167,7 +176,14 @@ class _CategoryState extends State<Category> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ScienceScreen(),
+                              ),
+                            );
+                          },
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15),
                             child: Column(
@@ -180,7 +196,7 @@ class _CategoryState extends State<Category> {
                                   color: Colors.cyan,
                                 ),
                                 Text(
-                                  'Science Fiction',
+                                  'Science',
                                   style: TextStyle(
                                       fontSize: 20, color: Colors.black54),
                                 ),
@@ -256,7 +272,7 @@ class _CategoryState extends State<Category> {
                                   color: Colors.cyan,
                                 ),
                                 Text(
-                                  'Stories',
+                                  'History',
                                   style: TextStyle(
                                       fontSize: 20, color: Colors.black54),
                                 ),

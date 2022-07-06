@@ -20,7 +20,7 @@ class _TabsState extends State<Tabs> {
     HomePage(),
     Library(),
     Category(),
-    Favorate(),
+    Favorites(),
     Settings(),
   ];
   List<BottomNavigationBarItem> bottomItime = [
