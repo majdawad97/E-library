@@ -29,12 +29,6 @@ class _CategoryState extends State<Category> {
                         color: Colors.cyan,
                         size: 30,
                       ),
-                      Center(
-                        child: Text(
-                          "Categories",
-                          style: TextStyle(fontSize: 20, color: Colors.cyan),
-                        ),
-                      ),
                       Row(
                         children: [
                           Icon(
@@ -86,7 +80,7 @@ class _CategoryState extends State<Category> {
                       alignment: Alignment.topLeft,
                       child: Text(
                         'Categories',
-                        style: TextStyle(fontSize: 25, color: Colors.cyan),
+                        style: TextStyle(fontSize: 25, color: Colors.black),
                       ),
                     ),
                   ),
@@ -112,7 +106,7 @@ class _CategoryState extends State<Category> {
                                 Text(
                                   'Design',
                                   style: TextStyle(
-                                      fontSize: 20, color: Colors.cyan),
+                                      fontSize: 20, color: Colors.black54),
                                 ),
                               ],
                             ),
@@ -147,7 +141,7 @@ class _CategoryState extends State<Category> {
                                 Text(
                                   'Fiction',
                                   style: TextStyle(
-                                      fontSize: 20, color: Colors.cyan),
+                                      fontSize: 20, color: Colors.black54),
                                 ),
                               ],
                             ),
@@ -188,7 +182,7 @@ class _CategoryState extends State<Category> {
                                 Text(
                                   'Science Fiction',
                                   style: TextStyle(
-                                      fontSize: 20, color: Colors.cyan),
+                                      fontSize: 20, color: Colors.black54),
                                 ),
                               ],
                             ),
@@ -223,7 +217,7 @@ class _CategoryState extends State<Category> {
                                 Text(
                                   'Astrology',
                                   style: TextStyle(
-                                      fontSize: 20, color: Colors.cyan),
+                                      fontSize: 20, color: Colors.black54),
                                 ),
                               ],
                             ),
@@ -264,7 +258,7 @@ class _CategoryState extends State<Category> {
                                 Text(
                                   'Stories',
                                   style: TextStyle(
-                                      fontSize: 20, color: Colors.cyan),
+                                      fontSize: 20, color: Colors.black54),
                                 ),
                               ],
                             ),
