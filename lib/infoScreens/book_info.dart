@@ -150,6 +150,23 @@ class BookScreen extends StatelessWidget {
                   color: Colors.cyan,
                   child: Center(
                     child: Text(
+                      'Add to favorites',
+                      style: TextStyle(color: Colors.white, fontSize: 20.0),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            TextButton(
+              onPressed: () {},
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Container(
+                  height: 45.0,
+                  width: MediaQuery.of(context).size.width,
+                  color: Colors.cyan,
+                  child: Center(
+                    child: Text(
                       'Buy Book',
                       style: TextStyle(color: Colors.white, fontSize: 20.0),
                     ),

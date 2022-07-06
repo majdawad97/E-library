@@ -31,7 +31,7 @@ class _CategoryState extends State<Category> {
                       ),
                       Center(
                         child: Text(
-                          "E-Library",
+                          "Categories",
                           style: TextStyle(fontSize: 20, color: Colors.cyan),
                         ),
                       ),

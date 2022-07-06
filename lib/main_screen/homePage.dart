@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:e_library/data/books_data.dart';
 import 'package:e_library/infoScreens/book_info.dart';
+import 'package:e_library/main_screen/category.dart';
 // import 'package:e_library/conttroller/api_controller.dart';
 import 'package:e_library/main_screen/favoritepage.dart';
 import 'package:e_library/widget/book_preview_widget.dart';
@@ -264,7 +265,16 @@ class _HomePageState extends State<HomePage> {
                               fontWeight: FontWeight.bold, fontSize: 20),
                           textAlign: TextAlign.left,
                         ),
-                        Text('See all')
+                        GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => Category(),
+                                ),
+                              );
+                            },
+                            child: Text('See all'))
                       ],
                     ),
                   ),

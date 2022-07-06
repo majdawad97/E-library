@@ -16,7 +16,7 @@ final List<Book> booksData = [
         "Tara Westover and her family grew up preparing for the End of Days but, according to the government, she didn’t exist. She hadn’t been registered for a birth certificate. She had no school records because she’d never set foot in a classroom, and no medical records because her father didn’t believe in hospitals",
   ),
   Book(
-    title: 'The Design of Everyday Things',
+    title: 'Design of Things',
     author: 'Don Norman',
     image: 'images/the_design_of_everyday_things.jpg',
     description:
