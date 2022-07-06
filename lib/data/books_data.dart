@@ -36,10 +36,11 @@ final List<Book> booksData = [
     description:
         '"These 20 picture cards can be used in an almost infinite number of combinations. However they are placed, they will magically match up to create seamless scenes and provide endless storytelling opportunities"--Containe',
   ),
-  // Book(
-  //   title: 'A Study in Scarlett',
-  //   author: 'Arthur Conan Doyel',
-  //   image: 'images/Interaction_of_color.jpg',
-  //   description: 'A book about Sherlock Holmes and Dr. John Watson',
-  // ),
+  Book(
+    title: 'Steal like an Artist',
+    author: 'Auston Kleon',
+    image: 'images/steal_like_an_artist.jpg',
+    description:
+        'The Steal Like an Artist Journal includes page after page of ideas, prompts, quotes, and exercises are like a daily course in creativity. There are lists to fill in—Ten Things I Want to Learn, Ten Things I Probably Think About More Than the Average Person.',
+  ),
 ];

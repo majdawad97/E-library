@@ -1,4 +1,5 @@
 import 'package:e_library/data/books_data.dart';
+import 'package:e_library/infoScreens/book_info.dart';
 import 'package:e_library/models/book_model.dart';
 import 'package:e_library/widget/book_preview_widget.dart';
 import 'package:flutter/material.dart';
@@ -74,12 +75,55 @@ class _LibraryState extends State<Library> {
               crossAxisSpacing: 5, mainAxisSpacing: 10, crossAxisCount: 3),
           children: [
             GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BookScreen(book: booksData[0]),
+                    ),
+                  );
+                },
                 child: Image.asset('images/Interaction_of_color.jpg')),
-            Image.asset('images/educated.jpg'),
-            Image.asset('images/the_design_of_everyday_things.jpg'),
-            Image.asset('images/The Gravity of Us.jpg'),
-            Image.asset('images/the-hollow-woods.jpg'),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BookScreen(book: booksData[1]),
+                    ),
+                  );
+                },
+                child: Image.asset('images/educated.jpg')),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BookScreen(book: booksData[2]),
+                    ),
+                  );
+                },
+                child: Image.asset('images/the_design_of_everyday_things.jpg')),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BookScreen(book: booksData[3]),
+                    ),
+                  );
+                },
+                child: Image.asset('images/The Gravity of Us.jpg')),
+            GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => BookScreen(book: booksData[4]),
+                    ),
+                  );
+                },
+                child: Image.asset('images/the-hollow-woods.jpg')),
             Image.asset('images/lunar storm.jpeg'),
             Image.asset('images/all-this-time.jpg'),
             Image.asset('images/crack the code.jpeg'),
