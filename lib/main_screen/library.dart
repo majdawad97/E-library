@@ -1,3 +1,6 @@
+import 'package:e_library/data/books_data.dart';
+import 'package:e_library/models/book_model.dart';
+import 'package:e_library/widget/book_preview_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
@@ -70,11 +73,13 @@ class _LibraryState extends State<Library> {
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisSpacing: 5, mainAxisSpacing: 10, crossAxisCount: 3),
           children: [
-            Image.asset('images/the imperfection of memory.jpg'),
-            Image.asset('images/Interaction_of_color.jpg'),
-            Image.asset('images/Sin_Eater_by_Megan_Campisi.jpg'),
-            Image.asset('images/steal_like_an_artist.jpg'),
+            GestureDetector(
+                onTap: () {},
+                child: Image.asset('images/Interaction_of_color.jpg')),
+            Image.asset('images/educated.jpg'),
             Image.asset('images/the_design_of_everyday_things.jpg'),
+            Image.asset('images/The Gravity of Us.jpg'),
+            Image.asset('images/the-hollow-woods.jpg'),
             Image.asset('images/lunar storm.jpeg'),
             Image.asset('images/all-this-time.jpg'),
             Image.asset('images/crack the code.jpeg'),
